@@ -1,3 +1,15 @@
+const express = require('express');
+const app = express();
+const port = 3000;
+
+app.get('/', (req, res) => {
+  res.send('Bot 7/24 Aktif Tutuluyor!');
+});
+
+app.listen(port, () => {
+  console.log(`Bot sunucusu http://localhost:${port} adresinde dinleniyor`);
+});
+
 const mineflayer = require('mineflayer');
 const { Movements, pathfinder, goals } = require('mineflayer-pathfinder');
 const { GoalBlock } = goals;
